@@ -21,9 +21,8 @@ public class Player : MonoBehaviour
         rd.AddForce(movedir, ForceMode.Acceleration);
 
         this.transform.forward = Vector3.Slerp(this.transform.forward, movedir, Time.deltaTime * 10f);
-        Debug.Log(rd.velocity);
-        // this.GetComponent<Rigidbody>().AddForce(Vector3.forward, ForceMode.Force);
-        // this.GetComponent<Rigidbody>().AddTorque(, ForceMode.Acceleration);
+        Debug.Log(rd.velocity.magnitude);
+        Debug.Log(rd.velocity.normalized);
     }
 
 }
