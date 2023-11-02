@@ -14,6 +14,7 @@ public class SceneManager1 : MonoBehaviour
         {
             Debug.Log(Random.Range(0, 10));
             Debug.Log(Random.Range(0.0f, 10.0f));
+            Debug.Log(Random.Range(0.0f, 10.0f));
 
         }
     }
